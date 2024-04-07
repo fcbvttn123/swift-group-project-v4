@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AF35463B-890E-48C5-9F65-923E2B6C70E5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "group-project/screens/EventScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "EventScreen"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072 - 578e79df46b301dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group_project.EventScreen.PhoneNumLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "group-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fizzaimran/local-desktop/Desktop/IOS%20PROJECT/swift-group-project-main-1/group-project/screens/EventScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072 - 5ba0c311848a9dd1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group_project.EventScreen.PhoneNumLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "group-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fizzaimran/local-desktop/Desktop/IOS%20PROJECT/swift-group-project-main-1/group-project/screens/EventScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072 - 678a3939177d886d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group_project.EventScreen.PhoneNumLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "group-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fizzaimran/local-desktop/Desktop/IOS%20PROJECT/swift-group-project-main-1/group-project/screens/EventScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072 - 3a02e1d3885753fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group_project.EventScreen.PhoneNumLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "group-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fizzaimran/local-desktop/Desktop/IOS%20PROJECT/swift-group-project-main-1/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072 - a98187ba7dcbc5f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group_project.EventScreen.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; group_project.EventScreen"
+                  moduleName = "group-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fizzaimran/local-desktop/Desktop/IOS%20PROJECT/swift-group-project-main-1/group-project/screens/EventScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "D8A84980-9397-4A51-A4AB-BF11D661A072 - 5ef32460e7fe5180"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "group_project.EventScreen.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;group_project.EventScreen&gt;"
+                  moduleName = "group-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fizzaimran/local-desktop/Desktop/IOS%20PROJECT/swift-group-project-main-1/group-project/screens/EventScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
