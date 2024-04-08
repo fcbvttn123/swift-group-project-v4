@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -116,7 +115,7 @@
             <objects>
                 <viewController id="s3e-eH-f1F" customClass="MapScreen" customModule="group_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i3Y-wU-WfW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ipx-15-Lkb">
@@ -167,6 +166,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Select your Home Campus" id="8d3-U6-WHx">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="2lU-kb-m0t">
+                                            <connections>
+                                                <segue destination="bCw-GM-oSg" kind="presentation" modalPresentationStyle="fullScreen" id="yIt-Pg-NQM"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Search" id="Cxw-WS-7m6">
                                             <connections>
                                                 <action selector="findNewLocationWithSender:" destination="s3e-eH-f1F" id="aAE-0p-JD8"/>
@@ -184,7 +188,7 @@
                         <outlet property="myMapView" destination="Ipx-15-Lkb" id="8q9-6e-3PI"/>
                         <outlet property="myTableView" destination="Mjs-y5-s0v" id="At1-LE-90T"/>
                         <outlet property="tbLocEntered" destination="PzB-rc-OH1" id="9CK-bx-tgC"/>
-                        <segue destination="FYi-LW-4C5" kind="presentation" identifier="toMapScreen2" id="EDU-0s-O6K"/>
+                        <segue destination="FYi-LW-4C5" kind="presentation" identifier="toMapScreen2" modalPresentationStyle="fullScreen" id="EDU-0s-O6K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30B-Yq-uft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -246,7 +250,13 @@
                                     <color key="textColor" red="0.064201556150000005" green="0.47261804340000002" blue="0.97643202539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Register Events" id="oyx-iG-MOg"/>
+                                    <navigationItem title="Register Events" id="oyx-iG-MOg">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="8k0-Xv-oSI">
+                                            <connections>
+                                                <segue destination="NK9-jR-t2I" kind="unwind" unwindAction="toCollegeScreenWithSender:" id="mkE-Sm-sKB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date and Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1z-VK-fpF">
@@ -318,6 +328,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYf-YG-IXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NK9-jR-t2I" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-749" y="1480"/>
         </scene>
@@ -355,7 +366,13 @@
                                     <color key="textColor" red="0.064201556150000005" green="0.47261804340000002" blue="0.97643202539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="All Events" id="fUi-8G-oYY"/>
+                                    <navigationItem title="All Events" id="fUi-8G-oYY">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="vvs-Mp-Ip5">
+                                            <connections>
+                                                <segue destination="lbt-dJ-Q1O" kind="unwind" unwindAction="toCollegeScreenWithSender:" id="z3a-VU-XQm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YT8-64-fGx">
@@ -413,6 +430,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s59-za-Tb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lbt-dJ-Q1O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="964" y="1480"/>
         </scene>
@@ -915,7 +933,7 @@
             <objects>
                 <viewController id="bCw-GM-oSg" customClass="CollegeScreen" customModule="group_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m6r-lf-tVH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collegeBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-8E-xjx">
@@ -974,7 +992,13 @@
                                     <color key="textColor" red="0.064201556150000005" green="0.47261804340000002" blue="0.97643202539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="PlayPal - Home" id="A5o-gO-9mn"/>
+                                    <navigationItem title="Home" id="A5o-gO-9mn">
+                                        <barButtonItem key="leftBarButtonItem" title="Sign out" id="Sbk-cV-067">
+                                            <connections>
+                                                <segue destination="OMc-or-239" kind="unwind" unwindAction="toLoginScreenWithSender:" id="lzp-8Y-Cz1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMH-YI-DNM">
@@ -1008,10 +1032,11 @@
                     <navigationItem key="navigationItem" id="ecm-jZ-sYx"/>
                     <connections>
                         <outlet property="addHomeCampusButton" destination="Jgb-Hc-2xe" id="igH-rc-yCu"/>
-                        <segue destination="s3e-eH-f1F" kind="presentation" identifier="toMaps" id="soj-L8-N1y"/>
+                        <segue destination="s3e-eH-f1F" kind="presentation" identifier="toMaps" modalPresentationStyle="fullScreen" id="soj-L8-N1y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jG-Qt-ebo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OMc-or-239" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1056" y="694"/>
         </scene>
@@ -1272,7 +1297,7 @@
                         <outlet property="btn" destination="RK5-cd-IVJ" id="zEH-K4-pB7"/>
                         <outlet property="password" destination="mrG-yf-8c5" id="EJ5-xp-O99"/>
                         <outlet property="username" destination="s1m-1e-xEV" id="1Mc-Ly-Znm"/>
-                        <segue destination="bCw-GM-oSg" kind="presentation" identifier="toHome" id="Aph-Xo-pSV"/>
+                        <segue destination="bCw-GM-oSg" kind="presentation" identifier="toHome" modalPresentationStyle="fullScreen" id="Aph-Xo-pSV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1284,7 +1309,7 @@
             <objects>
                 <viewController id="FYi-LW-4C5" customClass="MapScreenCampus" customModule="group_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfR-jC-VL7">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLy-gJ-ukp">
@@ -1309,6 +1334,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Select other Campus Locations" id="Q8H-VJ-M17">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="R5G-br-zFj">
+                                            <connections>
+                                                <segue destination="bCw-GM-oSg" kind="presentation" modalPresentationStyle="fullScreen" id="Ct7-rs-qvE"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Search" id="j5t-VM-MIE">
                                             <connections>
                                                 <action selector="findNewLocationWithSender:" destination="FYi-LW-4C5" id="Z7t-fU-1qh"/>
@@ -1352,10 +1382,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXs-ML-Gjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1590" y="715"/>
+            <point key="canvasLocation" x="2123" y="694"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="EDU-0s-O6K"/>
+        <segue reference="Ct7-rs-qvE"/>
         <segue reference="eRz-ua-dvj"/>
     </inferredMetricsTieBreakers>
     <resources>
