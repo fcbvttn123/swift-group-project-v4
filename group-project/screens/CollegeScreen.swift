@@ -13,6 +13,10 @@ class CollegeScreen: UIViewController {
         updateHomeCampusButtonTitle()
     }
     
+    @IBAction func toCollegeScreen(sender: UIStoryboardSegue) {
+        
+    }
+    
     func checkHomeCampus() {
         guard let currentUserUID = AppDelegate.shared.currentUserUID else {
             return
